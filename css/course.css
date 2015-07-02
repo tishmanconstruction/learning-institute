@@ -1,0 +1,162 @@
+img {
+	width: 100%;
+	height: auto;
+}
+
+img.logo {
+	height: 100px;
+	width: auto;
+}
+
+span.title {
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 10px;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+div.carousel {
+	background-color: #000000;
+}
+
+ol.carousel-indicators {
+	bottom: 0px;
+	margin-bottom: 10px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background: none;
+}
+
+.carousel-caption {
+	width: 100%;
+	bottom: 0px; left: 0px; right: 0px;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 10px;
+	padding-bottom: 70px;
+}
+
+.carousel-caption h4, .carousel-caption p {
+	z-index: 2;
+}
+
+div.item img {
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: auto;
+}
+
+div.item video {
+	position: relative;
+}
+
+div.course-outline ul {
+	padding-left: 16px;
+}
+
+div.course-outline ul li {
+	font-size: 12px;
+}
+
+div.links {
+	padding: 10px;
+	display: block;
+	background-color: #ffde17;
+}
+
+div.links ul {
+	list-style: none;
+	padding: 0px;
+}
+
+div.links ul li {
+	display: block;
+	clear: both;
+	margin: 10px;
+}
+
+div.links ul li a {
+	color: #000000;
+	display: block;
+}
+
+div.link-container span.glyphicon {
+	font-size: 36px;
+	float: left;
+	display: block;
+}
+
+div.link-container {
+	display: block;
+}
+
+span.link-title, span.link-subtitle {
+	display: block;
+}
+
+span.link-title {
+	font-size: 14px;
+}
+
+span.link-subtitle {
+	font-size: 10px;
+}
+
+div.organization {
+	padding: 40px;
+	background-color: #000000;
+}
+
+div.organization div.row div.col-md-2 {
+	padding: 10px;
+}
+
+div.organization span {
+	display: block;
+	word-wrap: break-word;
+	font-size: 8px;
+	color: #ffffff;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+span.title {
+	font-size: 14px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	span.title {
+		font-size: 16px;
+	}
+	.carousel-caption {
+		padding-bottom: 30px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	span.title {
+		font-size: 20px;
+	}
+	.carousel-caption {
+		padding-bottom: 30px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	span.title {
+		font-size: 24px;
+	}
+	.carousel-caption {
+		padding-bottom: 30px;
+	}
+}
