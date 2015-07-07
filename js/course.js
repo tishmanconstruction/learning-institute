@@ -28,19 +28,13 @@ $('.carousel-caption').hover(function() {
 
 $('.carousel').mouseleave(function() {
   $('.active').find('.carousel-caption').slideDown( 400 );
-})
+});
 
 var aspectratio = 0.7;
-var images = $('div.item');
-var videos = $('video');
-console.log( videos );
-var width = images.width();
-var height = width / aspectratio;
-images.height(height);
-for (i = 0; i < videos.length; i++) { 
-  var video = videos[i];
-  console.log(video);
-  video.css({left: -video.width()/2 + width/2 });
-  video.css({top: -video.height()/2 + height/2 });
-  i++;
-}
+var items = $('div.item');
+var itemsWidth = items.width();
+var itemsHeight = itemsWidth / aspectratio;
+items.height(itemsHeight);
+
+$('video').height(itemsHeight);
+$('video').css({'left': -this.width/2 + itemsWidth/2});
