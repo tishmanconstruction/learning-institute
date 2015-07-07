@@ -18,13 +18,6 @@ $('#carousel-example-generic').bind('slide.bs.carousel', function (e) {
       var video = $('.active').find('video');
       video.get(0).currentTime = 0;
       video.get(0).play();
-      setTimeout(function() {
-        var width = $('.active').width;
-        console.log(width);
-        var height = $('.active').height;
-        video.css({left: -video.width()/2 + width/2 });
-        video.css({top: -video.height()/2 + height/2 });
-      }, 100);
     }
   }, 800);
 });
@@ -39,13 +32,15 @@ $('.carousel').mouseleave(function() {
 
 var aspectratio = 0.7;
 var images = $('div.item');
-$(window).on('resize', function () {
-    var width = images.width();
-    var height = width / aspectratio;
-    images.height(height);
-    if ( $('.active').find('video').length ){
-      var video = $('div.item.active video');
-      video.css({left: -video.width()/2 + width/2 });
-      video.css({top: -video.height()/2 + height/2 });
-    }
-}).trigger('resize'); //on page load
+var videos = $('video');
+console.log( videos );
+var width = images.width();
+var height = width / aspectratio;
+images.height(height);
+for (i = 0; i < videos.length; i++) { 
+  var video = videos[i];
+  console.log(video);
+  video.css({left: -video.width()/2 + width/2 });
+  video.css({top: -video.height()/2 + height/2 });
+  i++;
+}
