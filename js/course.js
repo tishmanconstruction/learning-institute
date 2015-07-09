@@ -37,4 +37,3 @@ var itemsHeight = itemsWidth / aspectratio;
 items.height(itemsHeight);
 
 $('video').height(itemsHeight);
-$('video').css({'left': -this.width/2 + itemsWidth/2});
