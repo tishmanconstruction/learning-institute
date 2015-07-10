@@ -35,9 +35,3 @@ var items = $('div.item');
 var itemsWidth = items.width();
 var itemsHeight = itemsWidth / aspectratio;
 items.height(itemsHeight);
-
-var videos = $('video');
-
-for (var i = videos.length - 1; i >= 0; i--) {
-  console.log(videos[i]);
-};
