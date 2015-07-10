@@ -46,6 +46,10 @@ ol.carousel-indicators {
 	z-index: 2;
 }
 
+div.item {
+	position: relative;
+}
+
 div.item video, div.item img {
 	position : absolute;
     left: 50%;
@@ -54,6 +58,16 @@ div.item video, div.item img {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+div.item img.poster {
+	position: relative;
+	left: 0px;
+	top: 0px;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
 }
 
 div.course-outline ul {
