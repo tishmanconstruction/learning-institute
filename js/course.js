@@ -32,6 +32,14 @@ $('.carousel').mouseleave(function() {
 
 var aspectratio = 0.7;
 var items = $('div.item');
-var itemsWidth = items.width();
-var itemsHeight = itemsWidth / aspectratio;
-items.height(itemsHeight);
+window.onresize = function() {
+  resizeSlider();
+}
+
+resizeSlider();
+
+function resizeSlider() {
+  var itemsWidth = items.width();
+  var itemsHeight = itemsWidth / aspectratio;
+  items.height(itemsHeight);
+}
